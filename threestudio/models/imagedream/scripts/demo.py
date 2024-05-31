@@ -217,6 +217,7 @@ if __name__ == "__main__":
     parser.add_argument("--name", type=str, default="yoda")
     parser.add_argument("--suffix", type=str, default=", 3d asset")
     parser.add_argument("--size", type=int, default=256)
+    parser.add_argument("--num_video_frames", type=int, default=25)
     parser.add_argument(
         "--num_frames", type=int, default=5, help=" \
         num of frames (views) to generate, should be in [4 or 5],  \
@@ -242,7 +243,7 @@ if __name__ == "__main__":
     assert os.path.exists(args.image), "image does not exist!"
     ip = []
     for i in range(8):
-        img_idx = int(25 / 8 * i)
+        img_idx = int(args.num_frames / 8 * i)
         img_path = os.path.join(args.image, '{0}.png'.format(img_idx))
         img1 = Image.open(img_path)
         img1 = add_random_background(img1, bg_color=255).resize((256, 256))

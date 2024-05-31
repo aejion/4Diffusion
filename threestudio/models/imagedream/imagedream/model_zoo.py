@@ -56,7 +56,7 @@ def build_model(model_name, config_path=None, ckpt_path=None, cache_dir=None):
         missing, unexpected = model.load_state_dict(new_ckpt, strict=False)
         print(f"### missing keys: {len(missing)}; \n### unexpected keys: {len(unexpected)};")
         ckpt = torch.load(
-            './ckpts/check.ckpt',
+            './ckpts/4dm.ckpt',
             map_location="cpu")['state_dict']
         new_ckpt = {}
         keys = list(ckpt.keys())
