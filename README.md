@@ -18,6 +18,10 @@ pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https
 pip install -r requirements.txt
 ```
 
+## 4D Data
+
+We filter out animated 3D shapes from the vast 3D data corpus of [Objaverse-1.0](https://objaverse.allenai.org/objaverse-1.0/). We provide ids of the curated data in `dataset/uid.npy`. We will also release the rendered multi-view videos (To be uploaded) for future works.
+
 
 ## Quickstart
 

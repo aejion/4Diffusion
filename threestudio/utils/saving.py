@@ -297,7 +297,7 @@ class SaverMixin:
         name: Optional[str] = None,
         step: Optional[int] = None,
         video: bool = False,
-        fps: int = 16,
+        fps: int = 8,
     ):
         if video:
             B, H, W, C = imgs[0]["img"].shape
