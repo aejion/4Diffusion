@@ -1,6 +1,6 @@
 # 4Diffusion: Multi-view Video Diffusion Model for 4D Generation
 
-| [Project Page]() | [Paper]() |
+| [Project Page](https://aejion.github.io/4diffusion) | [Paper]() |
 
 Official code for 4Diffusion: Multi-view Video Diffusion Model for 4D Generation.
 
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ### Download pre-trained models
 
-Please clone [4DM](https://drive.google.com/drive/folders/19k3p2CfzQ6ArqpDNOy73RJeJhWfNs4i6?usp=sharing) and [ImageDream modelcard](https://huggingface.co/Peng-Wang/ImageDream/resolve/main/sd-v2.1-base-4view-ipmv.pt?download=true) under `./ckpts/`.
+Please download [4DM](https://drive.google.com/drive/folders/19k3p2CfzQ6ArqpDNOy73RJeJhWfNs4i6?usp=sharing) and [ImageDream modelcard](https://huggingface.co/Peng-Wang/ImageDream/resolve/main/sd-v2.1-base-4view-ipmv.pt?download=true) and put them under `./ckpts/`.
 
 ### Multi-view Video Generation
 
@@ -31,7 +31,7 @@ To generate multi-view videos, run:
 ```
 bash threestudio/models/imagedream/scripts/demo.sh
 ```
-please configure the `image`(input monocular video path), `text`(text prompt), and `num_video_frames`(number of frames of input monocular video) in `demo.sh`. The results can be found `threestudio/models/imagedream/4dm`
+please configure the `image`(input monocular video path), `text`(text prompt), and `num_video_frames`(number of frames of input monocular video) in `demo.sh`. The results can be found in `threestudio/models/imagedream/4dm`.
 
 We use [rembg](https://github.com/danielgatis/rembg) to segment the foreground object for 4D generation.
 ```
@@ -58,7 +58,7 @@ python launch.py --config ./configs/4diffusion.yaml --train \
                 system.prompt_processor_multi_view.total_num=25 \
                 data.multi_view.anchor_view_num=0
 ```
-The results can be found `outputs/4diffusion`
+The results can be found in `outputs/4diffusion`.
 
 
 ## Citing
@@ -67,7 +67,7 @@ If you find 4Diffusion helpful, please consider citing:
 
 ```
 @article{zhang20244diffusion,
-  author = {Zhang, Haiyu and Chen, Xinyuan and Wang, Yaohui and Liu, Xihui and Qiao, Yu},
+  author = {Zhang, Haiyu and Chen, Xinyuan and Wang, Yaohui and Liu, Xihui and Wang, Yunhong and Qiao, Yu},
   title = {4Diffusion: Multi-view Video Diffusion Model for 4D Generation},
   journal = {arXiv},
   year = {2024},
