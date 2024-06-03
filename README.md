@@ -1,6 +1,6 @@
 # 4Diffusion: Multi-view Video Diffusion Model for 4D Generation
 
-| [Project Page](https://aejion.github.io/4diffusion) | [Paper]() |
+| [Project Page](https://aejion.github.io/4diffusion) | [Paper](http://arxiv.org/abs/2405.20674) |
 
 Official code for 4Diffusion: Multi-view Video Diffusion Model for 4D Generation.
 
