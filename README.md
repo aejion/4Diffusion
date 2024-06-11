@@ -71,10 +71,10 @@ If you find 4Diffusion helpful, please consider citing:
 
 ```
 @article{zhang20244diffusion,
-  author = {Zhang, Haiyu and Chen, Xinyuan and Wang, Yaohui and Liu, Xihui and Wang, Yunhong and Qiao, Yu},
-  title = {4Diffusion: Multi-view Video Diffusion Model for 4D Generation},
-  journal = {arXiv},
-  year = {2024},
+  title={4Diffusion: Multi-view Video Diffusion Model for 4D Generation},
+  author={Zhang, Haiyu and Chen, Xinyuan and Wang, Yaohui and Liu, Xihui and Wang, Yunhong and Qiao, Yu},
+  journal={arXiv preprint arXiv:2405.20674},
+  year={2024}
 }
 ```
 
