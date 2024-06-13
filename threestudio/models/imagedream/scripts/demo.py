@@ -243,7 +243,7 @@ if __name__ == "__main__":
     assert os.path.exists(args.image), "image does not exist!"
     ip = []
     for i in range(8):
-        img_idx = int(args.num_frames / 8 * i)
+        img_idx = int(args.num_video_frames / 8 * i)
         img_path = os.path.join(args.image, '{0}.png'.format(img_idx))
         img1 = Image.open(img_path)
         img1 = add_random_background(img1, bg_color=255).resize((256, 256))
